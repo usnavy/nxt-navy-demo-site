@@ -1019,7 +1019,7 @@ input:-moz-placeholder { /* Firefox 18- */
 		display:inline-block;
 	    float: left;
 		width: 20px;
-		margin-top:-19px;
+		margin-top:-30px;
 		margin-left:-20px;
 
 	}
@@ -1631,6 +1631,40 @@ input:-moz-placeholder { /* Firefox 18- */
         float:left;
 		margin-top: 0rem;
     } 
+	
+/* Underline From Left */
+.hvr-underline-from-left-2 {
+  display: block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none !important;
+  padding-bottom: 12px;
+}
+.hvr-underline-from-left-2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #088199;
+  height: 4px;
+  text-decoration: none !important;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left-2:hover:before, .hvr-underline-from-left-2:focus:before, .hvr-underline-from-left-2:active:before {
+  right: 0;
+  text-decoration: none !important;
+}
 	
 	/** BOTTOM AREA **/
 	
@@ -2711,7 +2745,7 @@ $(document).ready(function() {
 <div class="media-category">
 <img src="http://www.navy.mil/management/photodb/photos/180405-N-JI086-521.JPG" alt="Personnel Policy" class="category-image">
 <div class="media-category-block block-align">
-	<h2>Blog</h2>
+	<h2 class="hvr-underline-from-left-2">Blog</h2>
 	<img src="img/teal-corner-frame.png" alt="Exclusive Frame">
 </div>
  <!-- Blog Post 1 -->  
@@ -2759,7 +2793,7 @@ $(document).ready(function() {
 <div class="media-category">
 <img src="http://www.navy.mil/management/photodb/photos/100514-N-7227H-012.jpg" alt="Personnel Policy" class="category-image">
 <div class="media-category-block block-align">
-	<h2>Podcast</h2>
+	<h2 class="hvr-underline-from-left-2">Podcast</h2>
 	<img src="img/teal-corner-frame.png" alt="Exclusive Frame">
 </div>
  <!-- Podcast 1 -->  
