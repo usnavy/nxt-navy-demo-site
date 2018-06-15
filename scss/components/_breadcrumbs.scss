@@ -1,0 +1,36 @@
+.breadcrumbs {
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin-right: $spacing-x-small;
+    margin-bottom: $spacing-x-small / 2;
+  } 
+
+  &:first-child {
+  /*margin-top: $spacing-large;*/
+  }
+}
+
+.breadcrumb {
+  color: $blue;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    color: $blue;
+    text-decoration: underline;
+  }
+
+  img {
+    margin-left: $spacing-x-small;
+  }
+}
+
+a:visited {
+	color: #088199;
+}
