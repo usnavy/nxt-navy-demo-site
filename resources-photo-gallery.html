@@ -1605,7 +1605,6 @@ input:-moz-placeholder { /* Firefox 18- */
 		float:right;
 		content: "Previous";
 		color: #ffffff;
-		margin-top: -28px;
 	}
 	
 	.owl-prev {
@@ -1630,17 +1629,17 @@ input:-moz-placeholder { /* Firefox 18- */
 	.owl-prev:after > svg {
 		float: left;
 		fill: #ffffff;
-		margin-top: 0px;
+		margin-top: -30px;
 		height: 30px;
 	}
 	
-	.owl-prev > svg {
-		float: left;
-		fill: #ffffff;
-		margin-top: 0px;
-		height: 30px;
-	}
-	
+	.owl-prev:after {
+    width: 150px;
+    float: right;
+    content: "Previous";
+    color: #ffffff;
+    margin-top: -30px;
+}
 	
 	.owl-next:before {
 		width: 150px;
@@ -1650,12 +1649,12 @@ input:-moz-placeholder { /* Firefox 18- */
 	}
 	
 	.owl-next:after {
-		width: 150px;
-		float:left;
-		content: "Next";
-		color: #ffffff;
-		margin-top: -28px;
-	}
+    width: 150px;
+    float: left;
+    content: "Next";
+    color: #ffffff;
+    margin-top: -30px;
+}
 	
 	.owl-next {
 		width: 150px;
@@ -1663,6 +1662,21 @@ input:-moz-placeholder { /* Firefox 18- */
 		content: "Next";
 		color: #ffffff;
 	}
+	
+		
+	.owl-next > svg {
+    float: right;
+    fill: #ffffff;
+    margin-top: 0;
+    height: 30px;
+}	
+		
+	.owl-prev > svg {
+    float: right;
+    fill: #ffffff;
+    margin-top: 0;
+    height: 30px;
+}
 	
 	.owl-nav div .owl-next:active .stories-archive-link, .owl-nav div .owl-next:focus .stories-archive-link, .owl-nav div .owl-next:visited .stories-archive-link {
 		float: left;
@@ -1678,13 +1692,6 @@ input:-moz-placeholder { /* Firefox 18- */
 		float: right;
 		height: 50px;
 		text-align: left;
-	}
-	
-	.owl-next > svg {
-		float: right;
-		fill: #ffffff;
-		margin-top: 0px;
-		height: 30px;
 	}
 	
 	.owl-carousel .owl-item img {
@@ -2332,6 +2339,33 @@ input:-moz-placeholder { /* Firefox 18- */
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
+	
+	@media screen and (max-width: 1920px) {
+    .main-content {
+    max-width: 86rem;
+    margin-left: auto;
+    margin-right: 16%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    float: right;
+    margin-top: -2rem;
+    padding-bottom: 5rem;
+}		
+	.owl-prev > svg {
+		float: left;
+		fill: #ffffff;
+		margin-top: -30px;
+		height: 30px;
+	}
+	
+	.owl-next > svg {
+		float: right;
+		fill: #ffffff;
+		margin-top: -30px;
+		height: 30px;
+	}	
+		
+	  }
 	
 	@media (max-width: 1440px) {
 	.no-js .owl-carousel, .owl-carousel.owl-loaded {
