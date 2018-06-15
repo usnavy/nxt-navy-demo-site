@@ -1,0 +1,13 @@
+.divider {
+  height: 2px;
+  margin-top: $spacing-xlarge;
+  margin-bottom: $spacing-xlarge;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  background-color: $color-gray;
+
+  &--narrow {
+    width: 160px;
+  }
+}

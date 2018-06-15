@@ -1,0 +1,16 @@
+p {
+  max-width: $text-max-width;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: $spacing-xlarge;
+  margin-bottom: $spacing-medium;
+}
+
+a:visited {
+	color: #088199;
+}
